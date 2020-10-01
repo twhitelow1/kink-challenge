@@ -1,72 +1,22 @@
 @import '../node_modules/normalize-scss/sass/normalize/import-now';
 @import 'https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css';
+@import 'base';
+@import 'layout';
+@import 'nav';
 
 $primary-bg: #000;
 $primary-text-color: #FF3B3B;
 body {
-  background-color: #000;
+  background-color: $primary-bg;
   font-family: 'Gotham', sans-serif;
   font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, p {
-  color: #FF3B3B;
+  color: $primary-text-color;
 }
 
-// Layout
 
-.container {
-  width: 100%;
-  position: relative;
-  top: 100px;
-}
-
-.content-grid {
-  padding: 0 auto;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.section {
-  min-height: 300px;
-  padding: 1rem;
-}
-
-.placeholder {
-  background-image: url('../assets/placeholder.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-}
-
-// Navigation
-
-nav {
-  background-color: #000;
-  padding: 1em 0;
-  display: block;
-  width: 100%;
-  z-index: 1000;
-  position: fixed;
-}
-
-.logo {
-  display: block;
-  height: 4rem;
-  width: 4rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
 
 // Comment Form
 

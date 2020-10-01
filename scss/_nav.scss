@@ -1,0 +1,21 @@
+// --------------------------------------
+// NAVIGATION STYLES
+// --------------------------------------
+
+nav {
+  background-color: #000;
+  padding: 1em 0;
+  display: block;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+}
+
+.logo {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
