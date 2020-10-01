@@ -20,22 +20,40 @@ p {
 // Layout
 .container{
 	width: 100%;
+	position: relative;
+	top: 100px;
+}
+
+.content-grid{
+	padding: 0 auto;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: 1fr 1fr;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.section{
+	min-height: 300px;
+	padding: 1rem;
 }
 
 // Navigation
 nav{
 	background-color: $primary-bg;
+	padding-top: 1em;
 	display: block;
 	width: 100%;
 	z-index: 1000;
+	position: fixed;
 }
 
 .logo{
 	display: block;
-	height: 3rem;
+	height: 4rem;
+	width: 4rem;
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 3rem;
 	margin: 0 auto;
 }
 
