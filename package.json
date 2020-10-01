@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
+    "isomorphic-fetch": "^3.0.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.13.1",
     "normalize-scss": "^7.0.1",

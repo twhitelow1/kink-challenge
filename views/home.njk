@@ -14,7 +14,8 @@
 {# Add Comment Section - Position: Left-side of Bottom Section #}
   <section class="section bottom left">
     <h2> Leave a Comment</h2>
-    <form class="comment-form" action="/handler" method="post"> 
+    <p class='form-msg'>{{msg}}</p>
+    <form class="comment-form" action="/" method="post"> 
       <label for="username">Username</label>
       <input type="text" name="username" id="username" placeholder="What is your name.."><br>
       <label for="comment">Comment</label>

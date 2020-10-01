@@ -2,8 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const nunjucks = require('nunjucks');
 const path = require('path');
-const { stdout } = require('process');
 const winston = require('winston');
+require('isomorphic-fetch');
 
 const PORT = 3000;
 
@@ -39,10 +39,8 @@ app.get('/', (request, response) => {
 	return response.render('home', options);
 });
 
-app.post('/handler', (request, response) => {
-	console.log(request.body);
-	response.send(request.body);
-	app.route('/');
+app.post('/', (request, response) => {
+	response.render('home', { msg: 'Comment was successfully submitted!' });
 });
 
 app.listen(PORT, () => {
