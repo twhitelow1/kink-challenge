@@ -1,0 +1,47 @@
+// Comment Form
+.comment-form {
+  label {
+    color: $primary-text-color;
+    display: inline-block;
+    padding: 1rem 0;
+  }
+
+  ::placeholder {
+    color: inherit;
+
+    /*Fix opacity issue on Firefox*/
+    opacity: 1;
+  }
+
+  select:focus, input:focus, textarea:focus {
+    background: $bgFormElsFocus;
+  }
+
+  button {
+    &:enabled:hover, &:focus {
+      background: $bgFormElsFocus;
+    }
+  }
+
+  input[type="checkbox"]:focus + label {
+    background: $bgFormElsFocus
+  }
+
+  textarea {
+    height: 170px;
+  }
+
+  input, textarea, select, button {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: $off-white;
+    display: inline-block;
+    background-color: $bgFormEls;
+    border: 1px solid $borderFormEls;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  }
+}
