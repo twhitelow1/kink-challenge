@@ -2,17 +2,19 @@
 
 {% block content %}
 <section class="content-grid">
+{#Info Section - Position: Left-side of Top Section #}
   <section class="section top left">
     <h2> Welcome To Kink.com</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu felis facilisis, cursus ante sit amet, scelerisque nunc. Praesent vestibulum sapien sem, non rhoncus erat pharetra ac. Suspendisse a odio eget tortor porttitor congue. Nunc congue vehicula est, sit amet maximus odio molestie ac. Vestibulum dolor metus, congue ut quam finibus, ornare efficitur massa. Etiam nec interdum felis, ac tincidunt odio. Vestibulum in libero id enim interdum cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum euismod orci eros, eget hendrerit sapien facilisis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a accumsan velit. Integer sit amet mauris tortor. Donec sit amet commodo nulla.</p>
   </section>
+  {#Placeholder Pic Section - Position: Right-side of Top Section #}
   <section class="section top right">
     <div class="placeholder">
   </section>
-
-<section class="section bottom left">
+{# Add Comment Section - Position: Left-side of Bottom Section #}
+  <section class="section bottom left">
     <h2> Leave a Comment</h2>
-    <form class="comment-form"> 
+    <form class="comment-form" action="/handler" method="post"> 
       <label for="username">Username</label>
       <input type="text" name="username" id="username" placeholder="What is your name.."><br>
       <label for="comment">Comment</label>
@@ -20,7 +22,7 @@
       <input type="submit" value="Submit">
     </form>
   </section>
-
+{# Comments Section - Position: Right-side of Bottom Section #}
   <section class="section bottom right">
     <h2>Recent Comments</h2>
     <section class="comment">
