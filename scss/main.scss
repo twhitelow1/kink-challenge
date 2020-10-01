@@ -16,3 +16,17 @@ h5,
 p {
 	color: $primary-text-color;
 }
+
+// Layout
+.container{
+	width: 100%;
+}
+
+// Navigation
+nav{
+	background-color: $primary-bg;
+	display: block;
+	width: 100%;
+	z-index: 1000;
+}
+
